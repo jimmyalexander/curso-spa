@@ -8,15 +8,16 @@ git:
   depth: 3
 script:
   - yarn build
-deploy:       //lo que genere donde lo va a  almacenar
+deploy:                                         
+
   provider: pages
-  edge: true,  //edge permite un sistema de control de las versiones y como se accede
-  skip-cleanup: true  //estructura de como vamos a estar generando cada una de las compilaciones
-  keep-history: true  // historial 
+  edge: true                           
+  skip-cleanup: true 
+  keep-history: true  
   github-token: $GITHUB_TOKEN
-  local-dir: dist/  // como lo establecimos en webpack
-  target-branch: gh-pages //Decimos a donde se va a enviar
-  commit_message: 'Deploy Release' // commit que sera creado por travis
+  local-dir: dist/  
+  target-branch: gh-pages 
+  commit_message: 'Deploy Release'
   on:
-    branch: master // El branch principal sobre el cual va  a actuar en este caso es master
+    branch: master 
    
