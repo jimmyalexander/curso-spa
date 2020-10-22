@@ -3,9 +3,9 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
-  color: #3c484e;
   font-family: 'Open Sans', sans-serif;
+  background: linear-gradient(to top right, cyan, purple);
+  color: white;
 }
 
 .Header-main {
@@ -60,6 +60,10 @@ body {
   font-size: 18px;
   font-weight: 400;
   text-align: center;
+  color: purple;
+  font-weight: bold;
+  text-shadow: 4px 4px 5px black;
+
 }
 
 .Characters-card h3 {
@@ -67,6 +71,8 @@ body {
   font-weight: 400;
   text-align: left;
   margin: 20px;
+  text-shadow: 4px 4px 5px black;
+
 }
 
 .Characters-item {
@@ -95,7 +101,7 @@ body {
 
 .Characters-item a {
   text-decoration: none;
-  color: #026C86;
+  color: white;
 }
 
 @keyframes fade {
